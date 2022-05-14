@@ -1,5 +1,9 @@
 import csv
 from re import sub
+from rdflib import Graph, Namespace, URIRef, BNode, Literal
+from rdflib.namespace import RDF, SPR
+from rdflib.namespace import Namespace
+
 
 class Entity:
     def __init__(self, row, entity_type, text):
@@ -30,7 +34,7 @@ def create_SVO_dictionaries(f):
         verbs_dict = {}
         objects_dict = {}
 
-        for i,row in enumerate(reader,1):
+        for i,row in enumerate(reader):
             #todo: account for Dates
 
             #Create objects for Entity 1 and insert into dictionary
@@ -46,11 +50,31 @@ def create_SVO_dictionaries(f):
             objects_dict[obj.row] = obj
 
         return [subjects_dict,verbs_dict,objects_dict]
-        
+
+def create_URI(node, namespace):
+
+# def construct_RDF(SVO):
+
+#     g = Graph()
+
+#     subjects = SVO[0]
+#     verbs = SVO[1]
+#     objects= SVO[2]
+    
+#     row_len = len(subjects)
+
+#     ns = 'http://example.org/'
+
+#     for i in range(row_len):
+#         URI_subject = create_URI(subjects[i],ns)
+#         URI_verb = create_URI(verbs[i],ns)
+#         URI_obj = create_URI(objects[i],ns)
+#         g.add(URI_subject,URI_verb,URI_obj)
       
 def main():
     SVO = create_SVO_dictionaries('condensed history.csv')
-    print(len(SVO[1]))
+    # construct_RDF(SVO)
+
 
 if __name__ == '__main__':
     main()

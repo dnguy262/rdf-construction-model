@@ -13,9 +13,9 @@ class Test_SVO_Dictionaries(unittest.TestCase):
         subjects = SVO[0]
         verbs = SVO[1]
         objects = SVO[2]
-        subject = subjects[1]
-        verb = verbs[1]
-        obj = objects[1]
+        subject = subjects[0]
+        verb = verbs[0]
+        obj = objects[0]
         self.assertEqual('fred_swanton', subject.text)
         self.assertEqual('businessman_of', verb.text)
         self.assertEqual('santa_cruz', obj.text)
