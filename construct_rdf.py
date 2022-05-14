@@ -2,24 +2,24 @@ import csv
 from re import sub
 
 class Entity:
-  def __init__(self, row, entity_type, text):
-    self.row = row
-    self.entity_type = entity_type
-    self.text = text
+    def __init__(self, row, entity_type, text):
+        self.row = row
+        self.entity_type = entity_type
+        self.text = text
 
 class Predicate:
-  def __init__(self, row, text):
-    self.row = row
-    self.text = text
+    def __init__(self, row, text):
+        self.row = row
+        self.text = text
 
 def snake_case(s):
-  return '_'.join(
-    sub('([A-Z][a-z]+)', r' \1',
-    sub('([A-Z]+)', r' \1',
-    s.replace('-', ' '))).split()).lower()
+    return '_'.join(
+        sub('([A-Z][a-z]+)', r' \1',
+        sub('([A-Z]+)', r' \1',
+        s.replace('-', ' '))).split()).lower()
 
-def main():
-    with open('condensed history.csv', 'r') as file:
+def create_SVO_dictionaries(f):
+    with open(f, 'r') as file:
         reader = csv.reader(file)
         #skips header
         next(reader) 
@@ -38,34 +38,19 @@ def main():
             subjects_dict[subject.row] = subject
 
             #Create objects for predicates and insert into dictionary
-            verb = Predicate(i,snake_case(row[0]))
+            verb = Predicate(i,snake_case(row[2]))
             verbs_dict[verb.row] = verb
 
             #Create objects for Entity 2 and insert into dictionary
-            obj = Entity(i,row[0],snake_case(row[1]))
+            obj = Entity(i,row[3],snake_case(row[4]))
             objects_dict[obj.row] = obj
 
-            #print(row)
-            #triplets.append(row)
+        return [subjects_dict,verbs_dict,objects_dict]
         
-        row_length = len(subjects_dict)
+      
+def main():
+    SVO = create_SVO_dictionaries('condensed history.csv')
+    print(len(SVO[1]))
 
-
-# for each row:
-#   create URI for entity 1
-#   create URI for predicate
-#   create URI for entity 2
-#   add to graph
-
-# create entity URI
-# entity_type -> URIRef Schema 
-# Based on entity_type:
-    #if person or organization -> name
-    #if date -> date
-    #if geography -> location
-    #if other -> text
-
-#if predicate:
-#   use universal predicate URIRef
-
-main()
+if __name__ == '__main__':
+    main()
