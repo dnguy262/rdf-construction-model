@@ -13,7 +13,6 @@ PERSON,John D. Davenport, settled ,GPE, known as Davenport Landing at mouth of A
 PERSON,Robert Sudlow, most esteemed artist in ,GPE, his home state of Kansas
 PERSON,Swanton, supports ,O, intellectual pursuits
 PERSON,Swanton, inspires ,O, creativity
-ORG,Smith, came to ,O, Swanton/Little Creek area
 ORG,Smith, was walking along ,O, tops
 PERSON,Swanton, identify as ,O, Amah Mutsun
 PERSON,John D. Davenport, settled ,O, known
@@ -22,7 +21,6 @@ ORG,Ramón Rodríguez, had ,O, prove
 ORG,Ohlone, refer to ,O, peoples
 PERSON,Fred Swanton, create ,O, electricity
 PERSON,John D. Davenport, settled ,GPE, later known as Davenport Landing
-ORG,Smith, first came to ,O, Swanton/Little Creek area
 PERSON,Randy Jones, email to ,O, author
 ORG,Smith, came as ,O, part of family camping trips
 ORG,Smith, worked as ,O, school agriculture teacher
@@ -78,4 +76,3 @@ PERSON,John D. Davenport, settled ,O, later known at mouth
 PERSON,John D. Davenport, settled at ,O, El Jarro Point
 PERSON,John D. Davenport, settled ,GPE, known as Davenport Landing at mouth
 PERSON,John D. Davenport, settled ,NORP, known as Davenport Landing at mouth of Arroyo del Agua Puerca
-ORG,M.A., is in ,ORG, Education

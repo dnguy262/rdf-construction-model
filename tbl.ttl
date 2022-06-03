@@ -53,9 +53,6 @@ spr:john_d._davenport a spr:Person ;
     spr:settled_at spr:el_jarro_point,
         spr:time .
 
-<https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttlm._a.> a spr:Organization ;
-    spr:is_in spr:education .
-
 spr:mexico a spr:GPE_Location ;
     spr:gained spr:independence ;
     spr:gained_independence_from spr:spain ;
@@ -88,13 +85,11 @@ spr:smith a spr:Organization ;
     spr:came spr:learn ;
     spr:came_as spr:part,
         spr:part_of_family_camping_trips ;
-    spr:came_to <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttlswanton/_little_creek_area> ;
     spr:donated spr:ranch ;
     spr:donated_ranch_in spr:1993 ;
     spr:donated_ranch_to spr:cal_poly ;
     spr:first_came_as spr:part,
         spr:part_of_family_camping_trips ;
-    spr:first_came_to <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttlswanton/_little_creek_area> ;
     spr:interview_by spr:author ;
     spr:transferred_to spr:cal_poly ;
     spr:was_walking_along spr:tops,
@@ -123,8 +118,6 @@ spr:ambrogio_gianone a spr:Other .
 spr:claim a spr:Other .
 
 spr:creativity a spr:Other .
-
-spr:education a spr:Organization .
 
 spr:el_jarro_point a spr:Other .
 
@@ -233,8 +226,6 @@ spr:part a spr:Other .
 spr:part_of_family_camping_trips a spr:Other .
 
 spr:river a spr:Other .
-
-<https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttlswanton/_little_creek_area> a spr:Other .
 
 spr:his_home_state a spr:Other .
 

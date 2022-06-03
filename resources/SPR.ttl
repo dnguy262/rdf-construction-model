@@ -1,81 +1,162 @@
-@prefix spr: <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> .
+@prefix spr: <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
-<https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> a owl:Ontology ;
+<https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> a owl:Ontology ;
 	dc:title "The Swanton Pacific Ranch vocabulary (SPR)" .
 
 spr:Property a rdfs:Class ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "Property" ;
 	rdfs:comment "A designated, natural land or space on the ranch." .
 
 spr:Facility a rdfs:Class ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "Facility" ;
 	rdfs:comment "A building or man-made structure on the ranch." .
 
 spr:Organization a rdfs:Class ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "Organization" ;
 	rdfs:comment "An organization." .
 
 spr:Person a rdfs:Class ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "Person" ;
 	rdfs:comment "A person." .
 
 spr:Project a rdfs:Class ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "Project" ;
 	rdfs:comment "A collective endeavour of some kind." .
 
+spr:Group a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Group" ;
+	rdfs:comment "Nationalities or religious or political groups." .
+
+spr:GPE_Location a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "GPE_Location" ;
+	rdfs:comment "Countries, cities, states." .
+
+spr:Location a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Location" ;
+	rdfs:comment "Non-GPE locations, mountain ranges, bodies of water." .
+
+spr:Product a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Product" ;
+	rdfs:comment "Objects, vehicles, foods, etc. (Not services.)" .
+
+spr:Event a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Event" ;
+	rdfs:comment "Named hurricanes, battles, wars, sports events, etc" .
+
+spr:Work_Of_Art a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Work_Of_Art" ;
+	rdfs:comment "Titles of books, songs, etc." .
+
+spr:Law a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Law" ;
+	rdfs:comment "Named documents made into laws." .
+
+spr:Language a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Language" ;
+	rdfs:comment "Any named language." .
+
+spr:Date a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Date" ;
+	rdfs:comment "Absolute or relative dates or periods." .
+
+
+spr:Time a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Time" ;
+	rdfs:comment "Times smaller than a day." .
+
+spr:Percent a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Percent" ;
+	rdfs:comment "Percentage, including ”%“." .
+
+spr:Money a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Money" ;
+	rdfs:comment "Monetary values, including unit." .
+
+spr:Quantity a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Quantity" ;
+	rdfs:comment "Measurements, as of weight or distance." .
+
+spr:Ordinal a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Ordinal" ;
+	rdfs:comment "first, second, etc." .
+
+spr:Cardinal a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Cardinal" ;
+	rdfs:comment "Numerals that do not fall under another type." .
+
+spr:Other a rdfs:Class ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
+	rdfs:label "Other" ;
+	rdfs:comment "Things that don't apply to Spacy NER terminology." .
+
 spr:age a rdf:Property ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "age" ;
 	rdfs:comment "The age in years of some Person." .
 
 spr:based_near a rdf:Property ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "based_near" ;
 	rdfs:comment "A location that something is based near, for some broadly human notion of near." .
 
 spr:birthday a rdf:Property ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "birthday" ;
 	rdfs:comment "The birthday of this Person, represented in mm-dd string form, eg. '12-31'." .
 
 spr:coordinates a rdf:Property ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "coordinates" ;
 	rdfs:comment "GPS coordinates." .
 
 spr:address a rdf:Property ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "address" ;
 	rdfs:comment "A physical mailing address." .
 
 spr:fun_fact a rdf:Property ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "fun_fact" ;
 	rdfs:comment "An interesting and niche tidbit about a Person." .
 
 spr:homepage a rdf:Property ,
 	owl:InverseFunctionalProperty ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "homepage" ;
 	rdfs:comment "A homepage for some thing." .
 
 spr:logo a rdf:Property ,
 	owl:InverseFunctionalProperty ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "logo" ;
 	rdfs:comment "A logo representing some thing." .
 
 spr:mbox a rdf:Property ,
 	owl:InverseFunctionalProperty ;
-	rdfs:isDefinedBy <https://raw.githubusercontent.com/mathurma/KGQA/main/resources/SPR.ttl> ;
+	rdfs:isDefinedBy <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> ;
 	rdfs:label "mbox" ;
 	rdfs:comment "A personal mailbox, ie. an Internet mailbox associated with exactly one owner." .

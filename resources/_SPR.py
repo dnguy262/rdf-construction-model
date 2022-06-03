@@ -37,13 +37,13 @@ class SPR(DefinedNamespace):
     Work_Of_Art: URIRef # Titles of books, songs, etc.
     Law: URIRef # Named documents made into laws.
     Language: URIRef # Any named language.
-    Date: URIRef #Absolute or relative dates or periods.
-    Time: URIRef        #Times smaller than a day.
-    Percent: URIRef     #Percentage, including ”%“.
-    Money: URIRef      # Monetary values, including unit.
-    Quantity: URIRef    #Measurements, as of weight or distance.
-    Ordinal: URIRef     #“first”, “second”, etc.
-    Cardinal: URIRef   # Numerals that do not fall under another type.
+    Date: URIRef # Absolute or relative dates or periods.
+    Time: URIRef # Times smaller than a day.
+    Percent: URIRef # Percentage, including ”%“.
+    Money: URIRef # Monetary values, including unit.
+    Quantity: URIRef # Measurements, as of weight or distance.
+    Ordinal: URIRef # “first”, “second”, etc.
+    Cardinal: URIRef # Numerals that do not fall under another type.
     Other: URIRef # Things that don't apply to Spacy NER terminology. 
 
 
