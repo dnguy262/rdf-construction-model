@@ -1,7 +1,7 @@
 import unittest
 from construct_rdf import *
 
-class Test_SVO_Dictionaries(unittest.TestCase):
+class Test_Create_SVO_Dictionaries(unittest.TestCase):
     def test_01_file1(self):
         SVO = create_SVO_dictionaries('test_files/condensed history.csv')
         self.assertEqual(80,len(SVO[0]))
