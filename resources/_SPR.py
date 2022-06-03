@@ -6,7 +6,7 @@ class SPR(DefinedNamespace):
     """
     Swanton Pacific Ranch (SPR) vocabulary
     The Swanton Pacific Ranch RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.
-    Generated from: https://swantonpoppycp.github.io/CalPoppy/SPR/spec/index.rdf~
+    Generated from: https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl
     Date: 2022-04-14
     """
 
@@ -53,4 +53,4 @@ class SPR(DefinedNamespace):
     logo: URIRef  # A logo representing some thing.
     mbox: URIRef  # A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.
 
-    _NS = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")  # https://xmlns.com/FOAF/0.1/ links to https://xmlns.com/FOAF/spec/
+    _NS = Namespace("https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl")  # https://xmlns.com/FOAF/0.1/ links to https://xmlns.com/FOAF/spec/

@@ -1,243 +1,242 @@
-@prefix ns1: <http://example.org/> .
-@prefix spr: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix spr: <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl> .
 
-ns1:al_smith a spr:Person ;
-    ns1:has ns1:1990_interview ;
-    ns1:interview_by ns1:unknown .
+spr:al_smith a spr:Person ;
+    spr:has spr:1990_interview ;
+    spr:interview_by spr:unknown .
 
-ns1:california a spr:GPE_Location ;
-    ns1:has ns1:establishment .
+spr:california a spr:GPE_Location ;
+    spr:has spr:establishment .
 
-ns1:crafts a spr:Organization ;
-    ns1:is_in ns1:oakland .
+spr:crafts a spr:Organization ;
+    spr:is_in spr:oakland .
 
-ns1:fred_swanton a spr:Person ;
-    ns1:built ns1:electric_power_plant,
-        ns1:power_plant ;
-    ns1:businessman_for ns1:six_years ;
-    ns1:businessman_of ns1:santa_cruz ;
-    ns1:create ns1:electricity ;
-    ns1:dammed ns1:river ;
-    ns1:first_dammed ns1:river ;
-    ns1:used ns1:water .
+spr:fred_swanton a spr:Person ;
+    spr:built spr:electric_power_plant,
+        spr:power_plant ;
+    spr:businessman_for spr:six_years ;
+    spr:businessman_of spr:santa_cruz ;
+    spr:create spr:electricity ;
+    spr:dammed spr:river ;
+    spr:first_dammed spr:river ;
+    spr:used spr:water .
 
-ns1:hilario_buelna a spr:Person ;
-    ns1:has ns1:claim ;
-    ns1:received ns1:property_rights,
-        ns1:property_rights_to_agua_puerca_y .
+spr:hilario_buelna a spr:Person ;
+    spr:has spr:claim ;
+    spr:received spr:property_rights,
+        spr:property_rights_to_agua_puerca_y .
 
-ns1:james_archibald a spr:Person ;
-    ns1:turned ns1:ambrogio_gianone,
-        ns1:grass ;
-    ns1:turned_grass_into ns1:milk ;
-    ns1:turned_into ns1:milk .
+spr:james_archibald a spr:Person ;
+    spr:turned spr:ambrogio_gianone,
+        spr:grass ;
+    spr:turned_grass_into spr:milk ;
+    spr:turned_into spr:milk .
 
-ns1:john_d._davenport a spr:Person ;
-    ns1:known_as ns1:davenport_landing ;
-    ns1:known_at ns1:mouth,
-        ns1:mouth_of_arroyo_del_agua_puerca ;
-    ns1:later_known_as ns1:davenport_landing ;
-    ns1:later_known_at ns1:mouth,
-        ns1:mouth_of_arroyo_del_agua_puerca ;
-    ns1:settled ns1:known,
-        ns1:known_as_davenport_landing,
-        ns1:known_as_davenport_landing_at_mouth,
-        ns1:known_as_davenport_landing_at_mouth_of_arroyo_del_agua_puerca,
-        ns1:known_at_mouth,
-        ns1:known_at_mouth_of_arroyo_del_agua_puerca,
-        ns1:later_known,
-        ns1:later_known_as_davenport_landing,
-        ns1:later_known_as_davenport_landing_at_mouth,
-        ns1:later_known_as_davenport_landing_at_mouth_of_arroyo_del_agua_puerca,
-        ns1:later_known_at_mouth,
-        ns1:later_known_at_mouth_of_arroyo_del_agua_puerca ;
-    ns1:settled_at ns1:el_jarro_point,
-        ns1:time .
+spr:john_d._davenport a spr:Person ;
+    spr:known_as spr:davenport_landing ;
+    spr:known_at spr:mouth,
+        spr:mouth_of_arroyo_del_agua_puerca ;
+    spr:later_known_as spr:davenport_landing ;
+    spr:later_known_at spr:mouth,
+        spr:mouth_of_arroyo_del_agua_puerca ;
+    spr:settled spr:known,
+        spr:known_as_davenport_landing,
+        spr:known_as_davenport_landing_at_mouth,
+        spr:known_as_davenport_landing_at_mouth_of_arroyo_del_agua_puerca,
+        spr:known_at_mouth,
+        spr:known_at_mouth_of_arroyo_del_agua_puerca,
+        spr:later_known,
+        spr:later_known_as_davenport_landing,
+        spr:later_known_as_davenport_landing_at_mouth,
+        spr:later_known_as_davenport_landing_at_mouth_of_arroyo_del_agua_puerca,
+        spr:later_known_at_mouth,
+        spr:later_known_at_mouth_of_arroyo_del_agua_puerca ;
+    spr:settled_at spr:el_jarro_point,
+        spr:time .
 
-<http://example.org/m._a.> a spr:Organization ;
-    ns1:is_in ns1:education .
+<https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttlm._a.> a spr:Organization ;
+    spr:is_in spr:education .
 
-ns1:mexico a spr:GPE_Location ;
-    ns1:gained ns1:independence ;
-    ns1:gained_independence_from ns1:spain ;
-    ns1:gained_independence_on ns1:september_27_1821 .
+spr:mexico a spr:GPE_Location ;
+    spr:gained spr:independence ;
+    spr:gained_independence_from spr:spain ;
+    spr:gained_independence_on spr:september_27_1821 .
 
-ns1:ohlone a spr:Organization ;
-    ns1:refer_to ns1:peoples,
-        ns1:peoples_of_area .
+spr:ohlone a spr:Organization ;
+    spr:refer_to spr:peoples,
+        spr:peoples_of_area .
 
-ns1:one_year a spr:Date ;
-    ns1:is_in ns1:manteca .
+spr:one_year a spr:Date ;
+    spr:is_in spr:manteca .
 
-ns1:ramón_rodríguez a spr:Organization ;
-    ns1:had ns1:francisco_alviso,
-        ns1:prove ;
-    ns1:prove ns1:francisco_alviso .
+spr:ramón_rodríguez a spr:Organization ;
+    spr:had spr:francisco_alviso,
+        spr:prove ;
+    spr:prove spr:francisco_alviso .
 
-ns1:randy_jones a spr:Person ;
-    ns1:email_to ns1:author .
+spr:randy_jones a spr:Person ;
+    spr:email_to spr:author .
 
-ns1:robert_sudlow a spr:Person ;
-    ns1:artist_in ns1:his_home_state,
-        ns1:his_home_state_of_kansas ;
-    ns1:esteemed_artist_in ns1:his_home_state,
-        ns1:his_home_state_of_kansas ;
-    ns1:most_esteemed_artist_in ns1:his_home_state,
-        ns1:his_home_state_of_kansas .
+spr:robert_sudlow a spr:Person ;
+    spr:artist_in spr:his_home_state,
+        spr:his_home_state_of_kansas ;
+    spr:esteemed_artist_in spr:his_home_state,
+        spr:his_home_state_of_kansas ;
+    spr:most_esteemed_artist_in spr:his_home_state,
+        spr:his_home_state_of_kansas .
 
-ns1:smith a spr:Organization ;
-    ns1:came ns1:learn ;
-    ns1:came_as ns1:part,
-        ns1:part_of_family_camping_trips ;
-    ns1:came_to <http://example.org/swanton/_little_creek_area> ;
-    ns1:donated ns1:ranch ;
-    ns1:donated_ranch_in ns1:1993 ;
-    ns1:donated_ranch_to ns1:cal_poly ;
-    ns1:first_came_as ns1:part,
-        ns1:part_of_family_camping_trips ;
-    ns1:first_came_to <http://example.org/swanton/_little_creek_area> ;
-    ns1:interview_by ns1:author ;
-    ns1:transferred_to ns1:cal_poly ;
-    ns1:was_walking_along ns1:tops,
-        ns1:tops_of_railroad_cars,
-        ns1:tops_of_railroad_cars_near_pismo_beach ;
-    ns1:worked_as ns1:high_school_agriculture_teacher,
-        ns1:school_agriculture_teacher .
+spr:smith a spr:Organization ;
+    spr:came spr:learn ;
+    spr:came_as spr:part,
+        spr:part_of_family_camping_trips ;
+    spr:came_to <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttlswanton/_little_creek_area> ;
+    spr:donated spr:ranch ;
+    spr:donated_ranch_in spr:1993 ;
+    spr:donated_ranch_to spr:cal_poly ;
+    spr:first_came_as spr:part,
+        spr:part_of_family_camping_trips ;
+    spr:first_came_to <https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttlswanton/_little_creek_area> ;
+    spr:interview_by spr:author ;
+    spr:transferred_to spr:cal_poly ;
+    spr:was_walking_along spr:tops,
+        spr:tops_of_railroad_cars,
+        spr:tops_of_railroad_cars_near_pismo_beach ;
+    spr:worked_as spr:high_school_agriculture_teacher,
+        spr:school_agriculture_teacher .
 
-ns1:swanton a spr:Person ;
-    ns1:identify_as ns1:amah_mutsun ;
-    ns1:inspires ns1:creativity ;
-    ns1:supports ns1:intellectual_pursuits,
-        ns1:pursuits .
+spr:swanton a spr:Person ;
+    spr:identify_as spr:amah_mutsun ;
+    spr:inspires spr:creativity ;
+    spr:supports spr:intellectual_pursuits,
+        spr:pursuits .
 
-ns1:today a spr:Date ;
-    ns1:from ns1:town .
+spr:today a spr:Date ;
+    spr:from spr:town .
 
-ns1:1990_interview a spr:Date .
+spr:1990_interview a spr:Date .
 
-ns1:1993 a spr:Date .
+spr:1993 a spr:Date .
 
-ns1:amah_mutsun a spr:Other .
+spr:amah_mutsun a spr:Other .
 
-ns1:ambrogio_gianone a spr:Other .
+spr:ambrogio_gianone a spr:Other .
 
-ns1:claim a spr:Other .
+spr:claim a spr:Other .
 
-ns1:creativity a spr:Other .
+spr:creativity a spr:Other .
 
-ns1:education a spr:Organization .
+spr:education a spr:Organization .
 
-ns1:el_jarro_point a spr:Other .
+spr:el_jarro_point a spr:Other .
 
-ns1:electric_power_plant a spr:Other .
+spr:electric_power_plant a spr:Other .
 
-ns1:electricity a spr:Other .
+spr:electricity a spr:Other .
 
-ns1:establishment a spr:Other .
+spr:establishment a spr:Other .
 
-ns1:grass a spr:Other .
+spr:grass a spr:Other .
 
-ns1:high_school_agriculture_teacher a spr:Other .
+spr:high_school_agriculture_teacher a spr:Other .
 
-ns1:independence a spr:Other .
+spr:independence a spr:Other .
 
-ns1:intellectual_pursuits a spr:Other .
+spr:intellectual_pursuits a spr:Other .
 
-ns1:known a spr:Other .
+spr:known a spr:Other .
 
-ns1:known_as_davenport_landing a spr:GPE_Location .
+spr:known_as_davenport_landing a spr:GPE_Location .
 
-ns1:known_as_davenport_landing_at_mouth a spr:GPE_Location .
+spr:known_as_davenport_landing_at_mouth a spr:GPE_Location .
 
-ns1:known_as_davenport_landing_at_mouth_of_arroyo_del_agua_puerca a spr:GPE_Location,
+spr:known_as_davenport_landing_at_mouth_of_arroyo_del_agua_puerca a spr:GPE_Location,
         spr:Group .
 
-ns1:known_at_mouth a spr:Other .
+spr:known_at_mouth a spr:Other .
 
-ns1:known_at_mouth_of_arroyo_del_agua_puerca a spr:Group .
+spr:known_at_mouth_of_arroyo_del_agua_puerca a spr:Group .
 
-ns1:later_known a spr:Other .
+spr:later_known a spr:Other .
 
-ns1:later_known_as_davenport_landing a spr:GPE_Location .
+spr:later_known_as_davenport_landing a spr:GPE_Location .
 
-ns1:later_known_as_davenport_landing_at_mouth a spr:GPE_Location .
+spr:later_known_as_davenport_landing_at_mouth a spr:GPE_Location .
 
-ns1:later_known_as_davenport_landing_at_mouth_of_arroyo_del_agua_puerca a spr:GPE_Location,
+spr:later_known_as_davenport_landing_at_mouth_of_arroyo_del_agua_puerca a spr:GPE_Location,
         spr:Group .
 
-ns1:later_known_at_mouth a spr:Other .
+spr:later_known_at_mouth a spr:Other .
 
-ns1:later_known_at_mouth_of_arroyo_del_agua_puerca a spr:Group .
+spr:later_known_at_mouth_of_arroyo_del_agua_puerca a spr:Group .
 
-ns1:learn a spr:Other .
+spr:learn a spr:Other .
 
-ns1:manteca a spr:GPE_Location .
+spr:manteca a spr:GPE_Location .
 
-ns1:oakland a spr:GPE_Location .
+spr:oakland a spr:GPE_Location .
 
-ns1:peoples a spr:Other .
+spr:peoples a spr:Other .
 
-ns1:peoples_of_area a spr:Other .
+spr:peoples_of_area a spr:Other .
 
-ns1:power_plant a spr:Other .
+spr:power_plant a spr:Other .
 
-ns1:property_rights a spr:Other .
+spr:property_rights a spr:Other .
 
-ns1:property_rights_to_agua_puerca_y a spr:Group .
+spr:property_rights_to_agua_puerca_y a spr:Group .
 
-ns1:prove a spr:Other .
+spr:prove a spr:Other .
 
-ns1:pursuits a spr:Other .
+spr:pursuits a spr:Other .
 
-ns1:ranch a spr:Other .
+spr:ranch a spr:Other .
 
-ns1:santa_cruz a spr:Other .
+spr:santa_cruz a spr:Other .
 
-ns1:school_agriculture_teacher a spr:Other .
+spr:school_agriculture_teacher a spr:Other .
 
-ns1:september_27_1821 a spr:Cardinal .
+spr:september_27_1821 a spr:Cardinal .
 
-ns1:six_years a spr:Other .
+spr:six_years a spr:Other .
 
-ns1:spain a spr:GPE_Location .
+spr:spain a spr:GPE_Location .
 
-ns1:time a spr:Other .
+spr:time a spr:Other .
 
-ns1:tops a spr:Other .
+spr:tops a spr:Other .
 
-ns1:tops_of_railroad_cars a spr:Other .
+spr:tops_of_railroad_cars a spr:Other .
 
-ns1:tops_of_railroad_cars_near_pismo_beach a spr:Other .
+spr:tops_of_railroad_cars_near_pismo_beach a spr:Other .
 
-ns1:town a spr:Other .
+spr:town a spr:Other .
 
-ns1:unknown a spr:Other .
+spr:unknown a spr:Other .
 
-ns1:water a spr:Other .
+spr:water a spr:Other .
 
-ns1:author a spr:Other .
+spr:author a spr:Other .
 
-ns1:cal_poly a spr:Other .
+spr:cal_poly a spr:Other .
 
-ns1:davenport_landing a spr:GPE_Location .
+spr:davenport_landing a spr:GPE_Location .
 
-ns1:francisco_alviso a spr:Other .
+spr:francisco_alviso a spr:Other .
 
-ns1:milk a spr:Other .
+spr:milk a spr:Other .
 
-ns1:mouth a spr:Other .
+spr:mouth a spr:Other .
 
-ns1:mouth_of_arroyo_del_agua_puerca a spr:Group .
+spr:mouth_of_arroyo_del_agua_puerca a spr:Group .
 
-ns1:part a spr:Other .
+spr:part a spr:Other .
 
-ns1:part_of_family_camping_trips a spr:Other .
+spr:part_of_family_camping_trips a spr:Other .
 
-ns1:river a spr:Other .
+spr:river a spr:Other .
 
-<http://example.org/swanton/_little_creek_area> a spr:Other .
+<https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttlswanton/_little_creek_area> a spr:Other .
 
-ns1:his_home_state a spr:Other .
+spr:his_home_state a spr:Other .
 
-ns1:his_home_state_of_kansas a spr:GPE_Location .
+spr:his_home_state_of_kansas a spr:GPE_Location .
 

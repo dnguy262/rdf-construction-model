@@ -61,7 +61,7 @@ def construct_RDF(SVO):
     
     row_len = len(subjects)
 
-    ns = 'http://example.org/'
+    ns = 'https://raw.githubusercontent.com/dnguy262/rdf-construction-model/main/resources/SPR.ttl'
 
     for i in range(row_len):
         
