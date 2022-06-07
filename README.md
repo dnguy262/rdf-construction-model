@@ -1,6 +1,4 @@
-# Senior Project: RDF Construction Model
-
-### Spring 2022
+# RDF Construction Model
 
 <br>
 
