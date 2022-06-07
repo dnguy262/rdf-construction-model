@@ -6,6 +6,17 @@ This program takes in a knowledge graph as input and outputs it in Resource Desc
 
 ### Instructions
 
-* **Run program** : python3 
-* **onet-parse** : Directory responsible for pinging ONET Web Services API to fetch all STEM jobs and their respective relevant data. 
-* **populate.py** : The script gets both directories data and populates DB tables.
+*Install dependencies:*
+```
+pip3 install rdflib
+```
+
+*Run program*
+```
+python3 construct_rdf.py
+```
+
+*Run unit tests*
+```
+python3 unit_tests.py
+```
