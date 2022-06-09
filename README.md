@@ -6,6 +6,13 @@ This program takes in a knowledge graph as input and outputs it in Resource Desc
 
 ### Instructions
 
+*Setup rutvik05's IE Pipeline:*
+```
+https://github.com/rutvik5/knowledge-graph
+```
+
+*Place knowledge-graph-name.csv into data folder*
+
 *Install dependencies:*
 ```
 pip3 install rdflib
