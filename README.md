@@ -2,7 +2,7 @@
 
 <br>
 
-This program takes in a knowledge graph as input and outputs it in Resource Description Framework (RDF) format. 
+This program takes in a knowledge graph as input and outputs it in Resource Description Framework (RDF) format. Custom RDF schema can be found under the resources folder.
 
 ### Instructions
 
